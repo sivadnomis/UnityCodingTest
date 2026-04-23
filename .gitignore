@@ -96,3 +96,6 @@ Assets/GoogleMobileAds/link.xml.meta
 # Unity 6 performance test framework
 /Assets/Resources/PerformanceTestRun*
 
+
+# macOS system files
+.DS_Store
