@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5d6c3b777edc7946a676e1f2ae953c5, type: 3}
   m_Name: Bundle_2
   m_EditorClassIdentifier: Assembly-CSharp::BundleRewardItem
-  items: []
+  items:
+  - {fileID: 11400000, guid: dcc3765a2bc0d4343b2110a370c91914, type: 2}
+  - {fileID: 11400000, guid: 2d22f71a2e163724981df5c32e47aa3c, type: 2}
+  - {fileID: 11400000, guid: c78ce7df35b0cd64d8270ae3ccb377f9, type: 2}
+  - {fileID: 11400000, guid: d3a2614db913eb045ba07a356a4824a2, type: 2}
