@@ -1,0 +1,16 @@
+# Rewards Gallery
+
+## Overview
+Implements a scrollable rewards gallery UI populated from a mock live-ops service, 
+using ScriptableObjects to define the rewards catalogue.
+
+## Changes
+- Added `RewardItem` base ScriptableObject with `SingleRewardItem` and `BundleRewardItem` derived types
+- Added `RewardsService` MonoBehaviour acting as a mock live-ops service, catalogue configured via inspector
+- Added `SingleRewardItemUI` and `BundleRewardItemUI` prefabs and scripts to display both reward types
+- Added `RewardsUIController` to dynamically instantiate and populate the scroll view at runtime
+
+## How to add new reward items
+1. Right click in Project window → Create → Rewards → Single Reward or Bundle Reward
+2. Configure the asset in the inspector
+3. Add it to the `Catalogue` list on the `RewardsService` GameObject in the scene
