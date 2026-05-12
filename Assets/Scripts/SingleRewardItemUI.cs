@@ -5,6 +5,7 @@ using TMPro;
 public class SingleRewardItemUI : MonoBehaviour, IRewardItemUI
 {
     [SerializeField] private Image icon;
+    [SerializeField] private GameObject label;
     [SerializeField] private TextMeshProUGUI quantityLabel;
     
     private Button _button;
@@ -14,7 +15,15 @@ public class SingleRewardItemUI : MonoBehaviour, IRewardItemUI
     {
         _data = (SingleRewardItem)item;
         icon.sprite = _data.icon;
-        quantityLabel.text = _data.quantity > 0 ? $"x{_data.quantity}" : "";
+
+        if (_data.quantity <= 0)
+        {
+            label.SetActive(false);
+        }
+        else
+        {
+            quantityLabel.text = $"x{_data.quantity}";
+        }
         
         _button = GetComponent<Button>();
         _button.onClick.AddListener(OnClicked);
