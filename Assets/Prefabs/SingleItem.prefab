@@ -205,8 +205,9 @@ GameObject:
   - component: {fileID: 6642013900924857980}
   - component: {fileID: 5517642779613334581}
   - component: {fileID: 7515867570924038314}
+  - component: {fileID: 3577978023265102618}
   m_Layer: 5
-  m_Name: Item
+  m_Name: SingleItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -314,6 +315,22 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &3577978023265102618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6232755470337153026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8533cf08c40bfae4f8656f5f11a07e22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SingleRewardItemUI
+  icon: {fileID: 7395654608684595006}
+  quantityLabel: {fileID: 3591377626608443170}
+  button: {fileID: 0}
+  background: {fileID: 0}
 --- !u!1 &6466583746703132150
 GameObject:
   m_ObjectHideFlags: 0
@@ -418,6 +435,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
