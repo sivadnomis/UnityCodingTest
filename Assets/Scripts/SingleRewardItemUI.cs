@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class SingleRewardItemUI : MonoBehaviour
+public class SingleRewardItemUI : MonoBehaviour, IRewardItemUI
 {
     [SerializeField] private Image icon;
     [SerializeField] private TextMeshProUGUI quantityLabel;

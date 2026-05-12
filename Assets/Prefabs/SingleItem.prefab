@@ -329,8 +329,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SingleRewardItemUI
   icon: {fileID: 7395654608684595006}
   quantityLabel: {fileID: 3591377626608443170}
-  button: {fileID: 0}
-  background: {fileID: 0}
 --- !u!1 &6466583746703132150
 GameObject:
   m_ObjectHideFlags: 0
